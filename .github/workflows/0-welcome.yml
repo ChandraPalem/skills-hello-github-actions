@@ -37,6 +37,17 @@ jobs:
       - name: checkout
         run: |
           echo "This is a demo version"
+  upload-image:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Upload image artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: uploaded-image
+        path: ./screenshot.png  # change this to the path of your image
   display1:
     name: echo display1
     runs-on: ubuntu-latest
