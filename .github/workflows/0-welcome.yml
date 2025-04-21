@@ -37,6 +37,13 @@ jobs:
       - name: checkout
         run: |
           echo "This is a demo version"
+  display1:
+    name: echo display1
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        run: |
+          echo " This is a demo version1"
   on_start:
     name: On start
     needs: get_current_step
