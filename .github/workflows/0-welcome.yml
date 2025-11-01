@@ -44,7 +44,7 @@ jobs:
       uses: actions/checkout@v4
 
     - name: Upload image artifact
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v5
       with:
         name: uploaded-image
         path: ./screenshot.png  # change this to the path of your image
